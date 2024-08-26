@@ -12,7 +12,7 @@ function Start() {
       {!showGame ? (
         <div className="flex items-center mb-4">
           <img
-            src="src\assets\dice_main.png"
+            src="src/assets/dice_main.png"
             alt="Dice game"
             className="h-96 mr-8"
           />
