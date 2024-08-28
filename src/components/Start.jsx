@@ -1,7 +1,7 @@
 import React from "react";
 import Game from "./Game";
 import { useState } from "react";
-
+import dice_main from "../assets/dice_main.png";
 function Start() {
   const [showGame, setShowGame] = useState(false);
   const handlePlayNow = () => {
@@ -11,11 +11,7 @@ function Start() {
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
       {!showGame ? (
         <div className="flex items-center mb-4">
-          <img
-            src="src/assets/dice_main.png"
-            alt="Dice game"
-            className="h-96 mr-8"
-          />
+          <img src={dice_main} alt="Dice game" className="h-96 mr-8" />
           <div>
             <h1 className="text-8xl font-bold text-black py-2">DICE GAME</h1>
             <button
